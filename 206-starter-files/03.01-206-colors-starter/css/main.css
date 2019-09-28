@@ -82,7 +82,7 @@ footer {
 }
 
 
-/*---------- Desktops ----------*/
+/*---------- DESKTOPS ----------*/
 @media (min-width: 1200px) {
   header {
     background-color: darkkhaki;
@@ -102,6 +102,10 @@ footer {
 
   footer {
     background-color: darkgrey;
+  }
+
+  .col-3 {
+    width: 33.33%
   }
    
 }
