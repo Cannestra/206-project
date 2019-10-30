@@ -46,7 +46,6 @@ p {
     padding: 0 1.875em;
 }
 
-/*The widths are in a percentage!*/
 header {
 	display: flex;
 	flex-direction: column;
@@ -89,7 +88,6 @@ header nav ul li a{
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
 	display: flex;
@@ -176,7 +174,6 @@ header nav ul li a{
 	line-height: 1.5em;
 }
 
-/*The widths are in a percentage!*/
 footer {
 	height: 50px;
 	border-top: 3px solid #eee;
@@ -190,3 +187,10 @@ footer span {
 	color: #77a466;
 	font-size: 1em;
 }
+
+@media all and (min-width:768px) {
+    
+}
+ 
+@media all and (min-width:1200px) {
+    
