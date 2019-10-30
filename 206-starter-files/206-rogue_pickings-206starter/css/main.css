@@ -52,11 +52,12 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 90vh;
 }
 
 header h1 {
 	flex: none;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -64,7 +65,8 @@ header h1 span {
 
 header nav {
 	height: 80%;
-
+	width: 90%;
+	border-top: 3px solid #77a466;
 }
 header nav ul {
 	display: flex;
@@ -73,7 +75,7 @@ header nav ul {
 	list-style: none;
 	height: 90%;
 	padding: 0;
-	margin: 0 auto;
+	margin: 10px 0 0 0;
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -166,7 +168,7 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 1.3125em;
+	line-height: 1.5em;
 }
 
 .address {
@@ -186,5 +188,5 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 1em;
 }
