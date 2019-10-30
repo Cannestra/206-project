@@ -15,8 +15,12 @@ body {
 }
 
 .container{
-	max-width: 100%;
-	margin: 0 auto;
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -39,49 +43,47 @@ h3 {
 h4 {
 	font-size: 1em;
 }
-
 p {
 	font-size: .875em;
 	line-height: 1.3125em;
     padding: 0 1.875em;
 }
-
 header {
 	display: flex;
-	flex-direction: column;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	height: 90vh;
-}
-
-header h1 {
-	flex: none;
+	width: 100%;
+	flex-flow: row wrap;
 	text-align: center;
+	border-bottom: 3px solid #77a466;
+}
+header h1 {
+	font-size: 1.875em;
+	margin: 0;
+	width: 100%;
+	padding: 38px 20px 20px 20px; 
+    border-bottom: 3px solid #77a466; 
 }
 header h1 span {
 	color: #77a466;
 }
-
 header nav {
-	height: 80%;
-	width: 90%;
-	border-top: 3px solid #77a466;
+	width: 100%;
+	padding: 20px 0;
 }
 header nav ul {
-	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
 	list-style: none;
-	height: 90%;
+	width: 100%;
 	padding: 0;
-	margin: 10px 0 0 0;
+	margin: 0;
 }
 header nav ul li {
 	text-transform: uppercase;
-	text-decoration: none;
 	text-align: center;
 	font-weight: 700;
 	font-size: 1em;
+	margin: 10px 0;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -91,35 +93,25 @@ header nav ul li a{
 .top-section,
 .bottom-section {
 	display: flex;
-	flex-flow: column;
-	margin: 0 auto;
-	clear: both;
-	width: 90vw;
-	height: auto;
-}
-
-.main-image {
-	flex: none;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 .main-image img {
 	width: 100%;
-	border-top: 3px solid #77a466;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
-	flex-flow: column;
-	height: auto;
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5625em;
 }
 .main-title h3 {
-	flex: none;
-	align-self: center;
-	text-align: center;
 	padding: 5px;
 	color: #77a466;
 	margin: 10px 10px 0 10px;
+	text-align: center;
 }
 .main-title p {
 	padding: 1em;
@@ -131,16 +123,14 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	flex: 1, 33%;
-	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
+		width: 100%;
+		border-top: 1px solid #eee;
 }
 
 .section-one h4,
 .section-two h4,
 .section-three h4 {
-	padding: 10px 30px;
+	padding: 10px 0;
 	text-align: center;
 	margin: 10px 0;
 }
@@ -159,7 +149,7 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 10px;
+	padding: 10px 0;
 	color:#77a466;
 }
 
@@ -175,6 +165,9 @@ header nav ul li a{
 }
 
 footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
@@ -189,8 +182,23 @@ footer span {
 }
 
 @media all and (min-width:768px) {
-    
+
+	.bottom-section {
+
+	}
+	.section-one {
+
+	}
+	.section-two {
+
+	}
+	.section-three {
+
+	}
+
 }
  
 @media all and (min-width:1200px) {
-    
+
+}
+    	}
