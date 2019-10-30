@@ -34,10 +34,10 @@ h2 {
     font-size: 1.5em;
 }
 h3 {
-	font-size: 1.125px;
+	font-size: 1.125em;
 }
 h4 {
-	font-size: 0.75px;
+	font-size: 1em;
 }
 
 p {
@@ -53,12 +53,10 @@ header {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	border-bottom: 3px solid #77a466;
 }
 
 header h1 {
 	flex: none;
-	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
@@ -92,45 +90,63 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	display: flex;
+	flex-flow: column;
 	margin: 0 auto;
 	clear: both;
+	width: 90vw;
+	height: auto;
 }
 
 .main-image {
-	height: auto;
-	float: left;
+	flex: none;
+	justify-content: center;
+	align-items: center;
 }
 .main-image img {
 	width: 100%;
+	border-top: 3px solid #77a466;
 	border-bottom: 3px solid #77a466;
 }
 
 .main-title {
+	flex-flow: column;
 	height: auto;
-	float: left;
 }
 .main-title h3 {
-	text-align: left;
-	padding: 5px 0;
+	flex: none;
+	align-self: center;
+	text-align: center;
+	padding: 5px;
 	color: #77a466;
+	margin: 10px 10px 0 10px;
 }
 .main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	padding: 1em;
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.5625em;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	flex: 1, 33%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
+.section-one h4,
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.section-one ul {
+	margin: 0;
 }
 
 .section-two {
@@ -138,29 +154,24 @@ header nav ul li a{
 	border-right: 1px solid #eee;
 }
 
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
-
 .menu {
 	list-style: none;
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
+	padding: 10px 10px;
 	color:#77a466;
 }
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 1em;
+	line-height: 1.3125em;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 /*The widths are in a percentage!*/
